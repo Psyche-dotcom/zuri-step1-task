@@ -1,7 +1,7 @@
 export const data = [
   {
-    id: 1,
-    href: "https://training.zuri.team/",
+    id: "twitter",
+    href: "https://twitter.com/bsaheed79",
     title: "Twitter Link",
   },
   {

@@ -1,26 +1,15 @@
 import React from "react";
-import Button from "./component/Button";
-import { data } from "./data/data";
+import { Route, Routes } from "react-router-dom";
+
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 const App = () => {
   return (
     <div className="Container">
-      <main>
-        <section>
-          <img src="img/profile.png" alt="avater-img" className="profile-img" />
-          <h3>Annette Black</h3>
-        </section>
-        <section className="buttonCon">
-          {data.map(({ id, title, href }) => (
-            <Button url={href} title={title} id={id} />
-          ))}
-        </section>
-        <section className="sl-gi">
-          <img src="img/slack.png" alt="" />
-          <a href="https://github.com/Psyche-dotcom">
-            <img src="img/Icon.png" alt="" />
-          </a>
-        </section>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <footer>
         <div className="footd">
           <img src="img/zuri.png" alt="zuri-logo" />{" "}
