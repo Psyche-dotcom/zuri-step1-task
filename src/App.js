@@ -11,6 +11,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <footer>
+        <hr />
         <div className="footd">
           <img src="img/zuri.png" alt="zuri-logo" />{" "}
           <p>HNG Internship 9 Frontend Task</p> <img src="img/I4G.png" alt="" />{" "}

@@ -5,7 +5,12 @@ import { data } from "../data/data";
 
 const Home = () => {
   return (
-    <main>
+    <main className="homePageSection">
+      <div className="shareDesign">
+        <img src="img/desktops.png" alt="share now" className="desktop" />
+        <img src="img/mobiles.png" alt="share now" className="mobile" />
+      </div>
+
       <section>
         <img
           src="img/profile.jpg"
@@ -15,6 +20,7 @@ const Home = () => {
         />
         <h3>Saheed Babatunde</h3>
       </section>
+
       <section className="buttonCon">
         {data.map(({ id, title, href, link }) => (
           <Button url={href} title={title} id={id} link={link} />
